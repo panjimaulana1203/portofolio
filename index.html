@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portofolio Panji Maulana</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>/* small v5 adjustments */ h2, h3 { text-shadow: 0 0 12px rgba(59,130,246,0.08);} </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- ✨ PROFESSIONAL LOADING SCREEN -->
+<div id="loader">
+<div class="loader-text">Panji Maulana</div>
+<div class="loader-line"></div>
+</div>
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+<div class="container mx-auto flex justify-between items-center py-4 px-6">
+<!-- Logo -->
+<h1 class="text-2xl font-bold text-blue-600">Portofolio</h1>
+<!-- Burger Menu Button (Mobile Only) -->
+<button aria-label="Toggle Menu" class="md:hidden flex flex-col space-y-1.5 focus:outline-none" id="menu-btn">
+<span class="block w-6 h-0.5 bg-gray-800 transition-all"></span>
+<span class="block w-6 h-0.5 bg-gray-800 transition-all"></span>
+<span class="block w-6 h-0.5 bg-gray-800 transition-all"></span>
+</button>
+<!-- Menu Items -->
+<div class="hidden md:flex md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none flex-col md:flex-row text-center md:text-left" id="menu">
+<a class="py-3 md:py-0 hover:text-blue-600 transition block" href="#about">About</a>
+<a class="py-3 md:py-0 hover:text-blue-600 transition block" href="#experience">Experience</a>
+<a class="py-3 md:py-0 hover:text-blue-600 transition block" href="#projects">Project</a>
+<a class="py-3 md:py-0 hover:text-blue-600 transition block" href="#core">Skills</a>
+<a class="py-3 md:py-0 hover:text-blue-600 transition block" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Script Navbar Toggle -->
+
+<!-- Hero Section -->
+<section class="reveal pt-28 pb-20 bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 text-white text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 via-transparent to-indigo-500/10"></div>
+<div class="relative z-10">
+<h2 class="text-4xl font-bold mb-4">Hello, I'm <span class="text-blue-400">Panji Maulana</span></h2>
+<p class="text-lg mb-6 text-gray-300"><span id="typing">Product Development | Business Analyst | Digital Analyst</span></p>
+<a class="border-2 border-yellow-400 text-yellow-300 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition" href="https://drive.google.com/file/d/18lxvShUr7KM-OoJUFLfVIRSF2nF4mrbu/view?usp=sharing" target="_blank">
+        Download CV
+      <!-- <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-400 transition"> -->
+<!-- Explore Projects -->
+</a>
+</div>
+</section>
+<!-- Tentang Saya -->
+<section class="container mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10" id="about" class="reveal">
+<img alt="Foto Profil" class="rounded-full shadow-lg w-48 h-48 object-cover" src="https://media.licdn.com/dms/image/v2/D5603AQESsj9BEA1mLA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672618385870?e=1762992000&amp;v=beta&amp;t=eP45a_N_KdigAte08tpnm2fEXPLBAByEGJVE26tmONM"/>
+<div>
+<h3 class="text-3xl font-bold mb-4 text-blue-600">About Me</h3>
+<p class="text-gray-600 leading-relaxed mb-4">
+        I’m a Product Development, Business Analyst and Digital Analyst with a background in Information Systems from Gunadarma University and professional experience in the banking industry. Collaborative, innovative, and detail-oriented, I’m passionate about creating customer-centric digital financial products that combine technology, data, and design to deliver real impact. Guided by integrity and a drive for innovation, my goal is to help shape the future of digital finance through products that are accessible, efficient, and meaningful.
+      </p>
+</div>
+</section>
+<!-- EXPERIENCE SECTION (perbaikan: ikon panah awalnya ke bawah) -->
+<section class="bg-white py-16 px-6" id="experience" class="reveal">
+<div class="container mx-auto">
+<h3 class="text-3xl font-bold text-center text-blue-600 mb-10">Professional Experience</h3>
+<div class="space-y-6 max-w-3xl mx-auto">
+<!-- Experience 1 (tampil awal; tombol membuka/menutup experience 2-5) -->
+<div class="relative bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+<button aria-expanded="false" class="w-full text-left flex items-start justify-between" id="btn-main-exp" onclick="toggleAllExperience()">
+<div>
+<h4 class="text-xl font-semibold text-gray-800">Digital Strategy &amp; Development Section Head</h4>
+<p class="text-blue-600 font-medium">PT Bank IBK Indonesia</p>
+<p class="text-gray-500 text-sm">May 2025 – Present</p>
+</div>
+<!-- <-- ikon awalnya ke bawah -->
+<i class="fas fa-chevron-down text-blue-600 text-lg transition-transform duration-300" id="icon-main-exp"></i>
+</button>
+<!-- <div class="mt-3 text-gray-600"> -->
+<!-- Leading innovation in digital banking, focusing on product lifecycle and customer experience.  -->
+<!-- Key initiatives include <strong>Digital Onboarding</strong> and <strong>Cardless Cash Withdrawal</strong>. -->
+<!-- </div> -->
+</div>
+<!-- Experience 2–5 (default hidden) -->
+<div class="hidden space-y-6" id="moreExperience">
+<!-- Experience 2 -->
+<div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+<h4 class="text-xl font-semibold text-gray-800">Digital Development Analyst Manager</h4>
+<p class="text-blue-600 font-medium">PT Bank MNC Internasional</p>
+<p class="text-gray-500 text-sm">Oct 2020 - May 2025</p>
+<!-- <p class="mt-3 text-gray-600"> -->
+<!-- Collaborated with teams to deliver automation and data-driven strategies, improving process efficiency by 25%. -->
+<!-- </p> -->
+</div>
+<!-- Experience 3 -->
+<div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+<h4 class="text-xl font-semibold text-gray-800">Research &amp; Development Manager</h4>
+<p class="text-blue-600 font-medium">PT Bank QNB Indonesia</p>
+<p class="text-gray-500 text-sm">Nov 2017 – Oct 2020</p>
+<!-- <p class="mt-3 text-gray-600"> -->
+<!-- Supported digital performance tracking and designed analytics dashboards to improve conversion rates. -->
+<!-- </p> -->
+</div>
+<!-- Experience 4 -->
+<div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+<h4 class="text-xl font-semibold text-gray-800">Implementation Supervisor</h4>
+<p class="text-blue-600 font-medium">PT Valdo Sumber Daya Mandiri</p>
+<p class="text-gray-500 text-sm">Oct 2016 – Oct 2017</p>
+<!-- <p class="mt-3 text-gray-600"> -->
+<!-- Contributed to ideation and prototyping of fintech products using agile methodology. -->
+<!-- </p> -->
+</div>
+<!-- Experience 5 -->
+<div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+<h4 class="text-xl font-semibold text-gray-800">IT Support &amp; Helpdesk</h4>
+<p class="text-blue-600 font-medium">PT Mitra Integrasi Informatika</p>
+<p class="text-gray-500 text-sm">Oct 2015 – Oct 2016</p>
+<!-- <p class="mt-3 text-gray-700"> -->
+<!-- Conducted research in digital strategy and innovation management. Assisted in publications related to fintech adoption. -->
+<!-- </p> -->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SCRIPT (perbaikan: ikon awal = down; toggle mengganti down <-> up & aria-expanded) -->
+
+<!-- Font Awesome (jika belum ada di halaman) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- PROJECT SECTION -->
+<section class="bg-gray-100 py-16 px-6" id="projects" class="reveal">
+<div class="container mx-auto">
+<h3 class="text-3xl font-bold text-center text-blue-600 mb-10">My Projects</h3>
+<!-- Grid Project Cards -->
+<div class="grid md:grid-cols-5 gap-8">
+<!-- Project Card 1 -->
+<div class="cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden hover:-translate-y-2 transition-transform" onclick="openModal('modal1')">
+<img alt="Proyek 1" class="w-full" src="https://thumbs2.imgbox.com/e5/13/ioypcl6D_t.png"/>
+<div class="p-5">
+<h4 class="font-semibold text-xl mb-2 text-gray-800">Digital Onboarding</h4>
+<p class="text-gray-600 line-clamp-2">Open a saving account online 24/7 without visiting a branch...</p>
+<span class="text-blue-600 font-semibold text-sm">View Details →</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden hover:-translate-y-2 transition-transform" onclick="openModal('modal2')">
+<img alt="Proyek 2" class="w-full" src="https://thumbs2.imgbox.com/11/f7/9qUBi29q_t.png"/>
+<div class="p-5">
+<h4 class="font-semibold text-xl mb-2 text-gray-800">Time Deposit</h4>
+<p class="text-gray-600 line-clamp-2">Customers can open a time deposit online...</p>
+<span class="text-blue-600 font-semibold text-sm">View Details →</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden hover:-translate-y-2 transition-transform" onclick="openModal('modal3')">
+<img alt="Proyek 3" class="w-full" src="https://thumbs2.imgbox.com/4d/b8/Cb6iyiP9_t.png"/>
+<div class="p-5">
+<h4 class="font-semibold text-xl mb-2 text-gray-800">Debit Card Management</h4>
+<p class="text-gray-600 line-clamp-2">Debit Card Management is a feature that allows customers...</p>
+<span class="text-blue-600 font-semibold text-sm">View Details →</span>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden hover:-translate-y-2 transition-transform" onclick="openModal('modal4')">
+<img alt="Proyek 4" class="w-full" src="https://thumbs2.imgbox.com/65/85/40RrYONv_t.png"/>
+<div class="p-5">
+<h4 class="font-semibold text-xl mb-2 text-gray-800">Cash In &amp; Cash Out</h4>
+<p class="text-gray-600 line-clamp-2">Customers can conveniently deposit and withdraw cash at Indomaret stores...</p>
+<span class="text-blue-600 font-semibold text-sm">View Details →</span>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="cursor-pointer bg-white shadow-lg rounded-xl overflow-hidden hover:-translate-y-2 transition-transform" onclick="openModal('modal5')">
+<img alt="Proyek 5" class="w-full" src="https://thumbs2.imgbox.com/cf/a0/XlnjZLGa_t.png"/>
+<div class="p-5">
+<h4 class="font-semibold text-xl mb-2 text-gray-800">Cardless Cash Withdrawal</h4>
+<p class="text-gray-600 line-clamp-2">Customers can easily withdraw cash at any ATM...</p>
+<span class="text-blue-600 font-semibold text-sm">View Details →</span>
+</div>
+</div>
+</div>
+<!-- Tombol Others Project (Di Tengah) -->
+<div class="flex justify-center mt-12">
+<button class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:from-blue-700 hover:to-indigo-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" onclick="openModal('modalOthers')">
+<i class="fas fa-folder-open mr-2"></i> Other Projects
+      </button>
+</div>
+</div>
+</section>
+<!-- MODALS -->
+<!-- Modal 1 -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modal1">
+<div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl" onclick="closeModal('modal1')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-3">Digital Onboarding</h4>
+<p class="text-gray-700">
+      Open a saving account online 24/7 without visiting a branch! With full biometric features, the process becomes faster, easier, and more secure. Customers only need to take a photo of their ID card, take a selfie with the ID, complete live detection, and fill in their personal data.
+    </p>
+</div>
+</div>
+<!-- Modal 2 -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modal2">
+<div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl" onclick="closeModal('modal2')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-3">Time Deposit</h4>
+<p class="text-gray-700">
+      Customers can open a time deposit online by selecting the tenor and maturity option, with the flexibility to modify maturity option or withdraw the deposit before maturity (break), subject to applicable terms and conditions.
+    </p>
+</div>
+</div>
+<!-- Modal 3 -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modal3">
+<div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl" onclick="closeModal('modal3')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-3">Debit Card Management</h4>
+<p class="text-gray-700">
+      Debit Card Management is a feature that allows customers to conveniently manage and control their debit cards. Designed for ease and flexibility, this feature provides customers with full control over their debit cards.
+    </p>
+</div>
+</div>
+<!-- Modal 4 -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modal4">
+<div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl" onclick="closeModal('modal4')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-3">Cash In Cash Out</h4>
+<p class="text-gray-700">
+      Customers can conveniently deposit and withdraw cash at all Indomaret stores. Simply generate a token through the app and present it to the Indomaret cashier to complete the transaction quickly and easily.
+    </p>
+</div>
+</div>
+<!-- Modal 5 -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modal5">
+<div class="bg-white rounded-xl shadow-lg max-w-lg w-full p-6 relative">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl" onclick="closeModal('modal5')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-3">Cardless Cash Withdrawal</h4>
+<p class="text-gray-700">
+      Customers can easily withdraw cash at any ATM LINK. Simply generate a token through the app, then enter the token and phone number at the ATM LINK to complete the transaction quickly and conveniently.
+    </p>
+</div>
+</div>
+<!-- MODAL OTHERS PROJECT -->
+<div class="fixed inset-0 hidden bg-black/70 flex items-center justify-center z-50" id="modalOthers">
+<div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-8 relative animate-fadeIn">
+<button class="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl" onclick="closeModal('modalOthers')">×</button>
+<h4 class="text-2xl font-bold text-blue-600 mb-5">Other Projects</h4>
+<p class="text-gray-700 mb-4">Here are some additional projects and case studies showcasing product design, business analysis, and digital innovation.</p>
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li><strong>QRIS Payment Integration:</strong> Unified QR code payments across multiple providers for faster transactions.</li>
+<li><strong>Wealth Management App:</strong> Developed dashboard for tracking investments and mutual funds.</li>
+<li><strong>Personal Finance Assistant:</strong> AI-based budgeting and savings recommendation system.</li>
+<li><strong>eKYC Automation:</strong> Streamlined onboarding using OCR and face recognition.</li>
+<li><strong>Rewards Loyalty System:</strong> Customer engagement platform with gamified experience.</li>
+</ul>
+<div class="text-right mt-6">
+<button class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition" onclick="closeModal('modalOthers')">
+        Close
+      </button>
+</div>
+</div>
+</div>
+<!-- STYLE -->
+<!-- SCRIPT -->
+
+<!-- SCRIPT -->
+
+<!-- Core Competencies -->
+<section class="bg-white-100 py-16 px-6" id="core" class="reveal">
+<div class="container mx-auto text-center">
+<h2 class="text-3xl font-bold text-center text-blue-600 mb-2">Core Competencies</h2>
+<p class="text-gray-600 mb-10">
+      A blend of technical, strategic, and leadership skills to deliver high-impact financial products.
+    </p>
+<div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+<!-- Card Item -->
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-university text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Banking &amp; Finance</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-chart-line text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Market Analysis</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-user-friends text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">User Research</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-project-diagram text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Agile &amp; Scrum</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-route text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Product Roadmapping</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-tasks text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Project Management</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-shield-alt text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Security &amp; Compliance</p>
+</div>
+<div class="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div class="p-4 bg-blue-100 rounded-full mb-3 hover:bg-blue-500 transition">
+<i class="fas fa-file-alt text-2xl text-blue-600 hover:text-white transition"></i>
+</div>
+<p class="font-medium text-gray-800">Regulatory Tech</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- Kontak -->
+<section class="container mx-auto py-2 px-6 text-center" id="contact" class="reveal">
+<br/>
+<h3 class="text-3xl font-bold text-blue-600 mb-6">Contact</h3>
+<div class="mt-6">
+<div class="flex items-center justify-center">
+<a class="mx-2 inline-block transition transform hover:scale-110" href="https://www.linkedin.com/in/panjimaulana1203/" target="_blank">
+<img alt="LinkedIn" class="w-6 h-6 object-contain" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/>
+</a>
+<a class="mx-2 inline-block transition transform hover:scale-110" href="https://github.com/panjimaulana1203" target="_blank">
+<img alt="GitHub" class="w-6 h-6 object-contain" src="https://cdn-icons-png.flaticon.com/512/733/733553.png"/>
+</a>
+<a class="mx-2 inline-block transition transform hover:scale-110" href="https://instagram.com/panjimaulana1203" target="_blank">
+<img alt="Instagram" class="w-6 h-6 object-contain" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"/>
+</a>
+<a class="mx-2 inline-block transition transform hover:scale-110" href="mailto:panjimaulana1203@gmail.com" target="_blank">
+<img alt="Email" class="w-6 h-6 object-contain" src="https://cdn-icons-png.flaticon.com/512/732/732200.png"/>
+</a>
+</div>
+</div>
+</section>
+<!-- Tombol Scroll to Top (Cyberpunk Transparent Style) -->
+<button class="group fixed bottom-6 right-6 backdrop-blur-md bg-white/10 border border-cyan-400/40 text-cyan-300 p-4 rounded-full shadow-[0_0_25px_rgba(34,211,238,0.4)] hover:shadow-[0_0_45px_rgba(236,72,153,0.7)] transition-all duration-500 transform hover:-translate-y-1 hover:scale-110" id="scrollToTopBtn" title="Back to Top">
+<i class="fas fa-rocket text-xl group-hover:rotate-180 group-hover:text-fuchsia-400 transition-all duration-700"></i>
+</button>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- Script -->
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6 mt-16">
+<p>My Portfolio. All rights reserved © 2025.</p>
+</footer>
+<!-- Script Loader -->
+
+<!-- Script Scroll To Top -->
+
+<script src="js/navbar.js"></script><script src="js/modal.js"></script><script src="js/scroll.js"></script><script src="js/loader.js"></script><script src="js/experience.js"></script>
+<script src="js/typing_reveal_v5.js"></script>
+</body>
+</html>
