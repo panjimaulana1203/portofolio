@@ -33,9 +33,7 @@ More projects are available on the website.
 ---
 
 ## 🌍 Live Website
-👉 [Visit My Portfolio](https://username.github.io/reponame/)
-
-_(Replace `username` and `reponame` with your GitHub profile and repo name)_
+👉 [Visit My Portfolio](https://panjimaulana1203.github.io/portofolio/)
 
 ---
 
